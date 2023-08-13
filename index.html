@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- CSS & JAVASCRIPT -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" async></script>
+
+</head>
+
+<body class="bg-dark" onload="init()">
+
+    <nav class="navbar navbar-light bg-primary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1 text-light">Quiz App</span>
+        </div>
+    </nav>
+
+    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+        <div class="card" style="width: 40rem;">
+            <img src="./img/artificial-intelligence-gacf1b760f_1280.jpg" class="card-img-top" alt="...">
+
+            <div id="questionCard" class="card-body">
+                <h5 class="card-title">Question</h5>
+                <p id="cardQuestion" class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                <div class="card mb-2 answer-card" onclick="answer('answer_1')">
+                    <div id="answer_1" class="card-body">
+                        Answer 1
+                    </div>
+                </div>
+
+                <div class="card mb-2 answer-card" onclick="answer('answer_2')">
+                    <div id="answer_2" class="card-body">
+                        Answer 2
+                    </div>
+                </div>
+
+                <div class="card mb-2 answer-card" onclick="answer('answer_3')">
+                    <div id="answer_3" class="card-body">
+                        Answer 3
+                    </div>
+                </div>
+
+                <div class="card mb-2 answer-card" onclick="answer('answer_4')">
+                    <div id="answer_4" class="card-body">
+                        Answer 4
+                    </div>
+                </div>
+
+                <div class="question-footer">
+                    <div>
+                        <b>1</b> of <b id="allQuestions"></b>
+                    </div>
+                    <a class="btn btn-primary" href="#" role="button" onclick="nextQuestion()">Next Question</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

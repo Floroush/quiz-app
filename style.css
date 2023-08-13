@@ -1,0 +1,10 @@
+.question-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.answer-card:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
