@@ -94,4 +94,5 @@ function answer(selection) {
 			.getElementById(idOfRightAnswer)
 			.parentNode.classList.add("bg-success", "text-light");
 	}
+	document.getElementById("nextButton").disabled = false;
 }
